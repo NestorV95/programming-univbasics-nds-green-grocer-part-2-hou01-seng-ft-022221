@@ -4,7 +4,7 @@ require "pry"
 def apply_coupons(cart, coupons)
  count = 0 
  while count < coupons.length 
-  cart_item = find_item_by_name 
+  cart_item = 
  
  
   counter +=1 
