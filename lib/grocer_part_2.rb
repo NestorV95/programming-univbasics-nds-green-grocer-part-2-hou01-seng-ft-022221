@@ -4,12 +4,12 @@ require "pry"
 def apply_coupons(cart, coupons)
  count = 0 
  while count < coupons.length 
-  cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
+  cart_item = find_item_by_name_in_collection(coupons[count][:item], cart)
    coupon_item_name = "#{coupons[counter][:item]} W/COUPON"
     cart_item_with_coupon = find_item_by_name_in_collection(coupon_item_name, cart)
-     if cart_item && cart_item[:count] >= coupons[counter][:num]
+     if cart_item && cart_item[:count] >= coupons[count][:num]
       if cart_item_with_coupon
-        cart_item_with_coupon[:count] += 
+        cart_item_with_coupon[:count] += coupons[count]
   counter +=1 
  end 
 end
