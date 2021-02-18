@@ -40,5 +40,10 @@ end
 
 def checkout(cart, coupons)
   con_cart = consolidate_cart(cart)
-  cou_cart = 
+  cou_cart = apply_coupons(con_cart, coupons)
+  fin_cart = apply_clearance(cou_cart)
+  
+  total = 0 
+  index = 0 
+  total += fin_cart[index][:price]
 end
