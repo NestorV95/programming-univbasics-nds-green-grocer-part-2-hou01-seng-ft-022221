@@ -2,7 +2,8 @@ require_relative './part_1_solution.rb'
 require "pry"
 
 def apply_coupons(cart, coupons)
- 
+ count = 0 
+ while count < coupons.length 
 end
 
 def apply_clearance(cart)
