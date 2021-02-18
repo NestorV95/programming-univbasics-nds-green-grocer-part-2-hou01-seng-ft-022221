@@ -4,6 +4,11 @@ require "pry"
 def apply_coupons(cart, coupons)
  count = 0 
  while count < coupons.length 
+ 
+ 
+ 
+  counter +=1 
+ end 
 end
 
 def apply_clearance(cart)
